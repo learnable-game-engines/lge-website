@@ -1,0 +1,22 @@
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.flex {
+	display: flex;
+}
+
+.col-seven {
+    width:14.285%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+h1 {
+  /* Extra small devices (phones, less than 768px) */
+  font-size: 2rem;
+}
