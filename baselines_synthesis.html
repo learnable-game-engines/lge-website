@@ -13,61 +13,49 @@
 </head>
 <body>
 
-		<section class="jumbotron text-center pb-2">
-			<div class="container">
+		<section class="jumbotron text-center pb-3 mb-2">
+			<div class="container-md pb-4">
 				<h1 class="jumbotron-heading">Plotting Behind the Scenes: Towards Learnable Game Engines</h1>
 
 			</div>
 		</section>
 
+		<div class="container-md">
+
+			<div class="row pt-1 justify-content-sm-center">
+				  
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="index.html" role="button">Overview</a>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="dataset.html" role="button">Dataset</a>
+				<div class="btn-group">
+					<a class="sm-1 mx-1 btn btn-primary mt-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Animation Model</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="action_conditioned_video_prediction.html" role="button">Action-Conditioned Video Prediction</a>
+						<a class="dropdown-item" href="video_completion.html" role="button">Video Completion</a>
+						<a class="dropdown-item" href="unconditional_generation.html" role="button">Unconditional Generation</a>
+						<a class="dropdown-item" href="bernoulli.html" role="button">Random Conditioning</a>
+						<a class="dropdown-item" href="baselines_animation.html" role="button">Baselines</a>
+						<a class="dropdown-item" href="ablation_animation.html" role="button">Ablation</a>
+				    </div>
+				</div>
+				<div class="btn-group">
+				    <a class="sm-1 mx-1 btn btn-primary mt-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Synthesis Model</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					    <a class="dropdown-item" href="camera_manipulation.html" role="button">Camera Manipulation</a>
+						<a class="dropdown-item" href="style_manipulation.html" role="button">Style Manipulation</a>
+						<a class="dropdown-item" href="baselines_synthesis.html" role="button">Baselines</a>
+						<a class="dropdown-item" href="ablation_synthesis.html" role="button">Ablation</a>
+				    </div>
+				</div>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="" role="button">Paper</a>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="https://github.com/learnable-game-engines/lge" role="button">GitHub</a>
+
+			</div>	
+
+		</div>
 		<div class="container">
 
-			<div class="row pt-1 justify-content-sm-center">
-				  
-				<a class="sm-1 mx-1 btn btn-primary" href="index.html" role="button">Overview</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="dataset.html" role="button">Dataset</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="" role="button">Paper</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="" role="button">GitHub</a>
 
-			</div>			
-			<div class="row pt-3 text-center">
-				  
-				<h6 class="col-sm-12">Animation Module</h6>
-
-
-			</div>		
-			<div class="row justify-content-sm-center">
-				  
-
-				<a class="sm-1 mx-1 btn btn-primary" href="action_conditioned_video_prediction.html" role="button">Action-Conditioned Video Prediction</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="video_completion.html" role="button">Video Completion</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="unconditional_generation.html" role="button">Unconditional Generation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="bernoulli.html" role="button">Random Conditioning</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="baselines_animation.html" role="button">Baselines</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="ablation_animation.html" role="button">Ablation</a>
-
-			</div>		
-			<div class="row pt-3 text-center">
-				  
-				<h6 class="col-sm-12">Synthesis Module</h6>
-
-
-			</div>		
-			<div class="row pt-1 justify-content-sm-center">
-				  
-				<a class="sm-1 mx-1 btn btn-primary" href="camera_manipulation.html" role="button">Camera Manipulation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="style_manipulation.html" role="button">Style Manipulation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="baselines_synthesis.html" role="button">Baselines</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="ablation_synthesis.html" role="button">Ablation</a>
-
-			</div>		
-
-
-			<hr class="mt-5">
-
-
-			
-			<h2 class="pt-4">Synthesis module comparison to baselines</h2>
+			<h2 class="pt-5">Synthesis module comparison to baselines</h2>
 
 			<p class="">We evaluate our synthesis model against the Playable Environments baseline (PE) and a version of it retrained on the 1024x576px resolution employed by our model (PE+).</p>
 

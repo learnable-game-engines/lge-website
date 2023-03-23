@@ -13,69 +13,61 @@
 </head>
 <body>
 
-		<section class="jumbotron text-center pb-2">
-			<div class="container">
+		<section class="jumbotron text-center pb-3 mb-2">
+			<div class="container-md pb-4">
 				<h1 class="jumbotron-heading">Plotting Behind the Scenes: Towards Learnable Game Engines</h1>
 
 			</div>
 		</section>
 
-		<div class="container mw-50">
+		<div class="container-md">
 
 			<div class="row pt-1 justify-content-sm-center">
 				  
-				<a class="sm-1 mx-1 btn btn-primary" href="index.html" role="button">Overview</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="dataset.html" role="button">Dataset</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="" role="button">Paper</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="" role="button">GitHub</a>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="index.html" role="button">Overview</a>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="dataset.html" role="button">Dataset</a>
+				<div class="btn-group">
+					<a class="sm-1 mx-1 btn btn-primary mt-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Animation Model</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <a class="dropdown-item" href="action_conditioned_video_prediction.html" role="button">Action-Conditioned Video Prediction</a>
+						<a class="dropdown-item" href="video_completion.html" role="button">Video Completion</a>
+						<a class="dropdown-item" href="unconditional_generation.html" role="button">Unconditional Generation</a>
+						<a class="dropdown-item" href="bernoulli.html" role="button">Random Conditioning</a>
+						<a class="dropdown-item" href="baselines_animation.html" role="button">Baselines</a>
+						<a class="dropdown-item" href="ablation_animation.html" role="button">Ablation</a>
+				    </div>
+				</div>
+				<div class="btn-group">
+				    <a class="sm-1 mx-1 btn btn-primary mt-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Synthesis Model</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					    <a class="dropdown-item" href="camera_manipulation.html" role="button">Camera Manipulation</a>
+						<a class="dropdown-item" href="style_manipulation.html" role="button">Style Manipulation</a>
+						<a class="dropdown-item" href="baselines_synthesis.html" role="button">Baselines</a>
+						<a class="dropdown-item" href="ablation_synthesis.html" role="button">Ablation</a>
+				    </div>
+				</div>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="" role="button">Paper</a>
+				<a class="sm-1 mx-1 btn btn-primary mt-2" href="https://github.com/learnable-game-engines/lge" role="button">GitHub</a>
 
-			</div>			
-			<div class="row pt-3 text-center">
-				  
-				<h6 class="col-sm-12">Animation Module</h6>
+			</div>	
 
-
-			</div>		
-			<div class="row justify-content-sm-center">
-				  
-
-				<a class="sm-1 mx-1 btn btn-primary" href="action_conditioned_video_prediction.html" role="button">Action-Conditioned Video Prediction</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="video_completion.html" role="button">Video Completion</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="unconditional_generation.html" role="button">Unconditional Generation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="bernoulli.html" role="button">Random Conditioning</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="baselines_animation.html" role="button">Baselines</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="ablation_animation.html" role="button">Ablation</a>
-
-			</div>		
-			<div class="row pt-3 text-center">
-				  
-				<h6 class="col-sm-12">Synthesis Module</h6>
-
-
-			</div>		
-			<div class="row pt-1 justify-content-sm-center">
-				  
-				<a class="sm-1 mx-1 btn btn-primary" href="camera_manipulation.html" role="button">Camera Manipulation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="style_manipulation.html" role="button">Style Manipulation</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="baselines_synthesis.html" role="button">Baselines</a>
-				<a class="sm-1 mx-1 btn btn-primary" href="ablation_synthesis.html" role="button">Ablation</a>
-
-			</div>		
+		</div>
+		<div class="container">		
 
 
-			<hr class="mt-5">
+			
 
-			<div class="col-sm-12 text-center">
-					<h3 class="pt-5">Video Overview</h3>
-					<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			<div class="col-sm-12 text-center mt-4">
+					<h3 class="pt-3">Video Overview</h3>
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/JTzwviDGgWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 			</div>	
 
 			<h3 class="pt-4">Abstract</h3>
-			<p> Game engines are powerful tools in computer graphics. Their power comes at the immense cost of their development. In this work, we present a framework to train game-engine-like neural models, solely from monocular annotated videos. The result—a Learnable Game Engine (LGE)—maintains states of the scene, objects and agents in it, and enables rendering the environment from a controllable viewpoint. Similarly to a game engine, it models the logic of the game and the underlying rules of physics, to make it possible for a user to <em>play</em> the game by specifying both high- and low-level action sequences. Most captivatingly, our LGE unlocks the <em>director's mode</em>, where the game is played by <em>plotting behind the scenes</em>, specifying high-level actions and goals for the agents in the form of <em>language</em> and <em>desired states</em>. This requires learning “game AI”, encapsulated by our animation model, to navigate the scene using high-level constraints, play against an adversary, devise the strategy to win a point. The key to learning such game AI is the exploitation of a large and diverse text corpus, collected in this work, describing detailed actions in a game and used to train our animation model. To render the resulting state of the environment and its agents, we use a compositional NeRF representation used in our synthesis model. To foster future research, we present newly collected, annotated and calibrated large-scale Tennis and Minecraft datasets. Our method significantly outperforms existing neural video game simulators in terms of rendering quality. Besides, our LGEs unlock applications beyond capabilities of the current state of the art. Our framework, data, and models will be made publicly available.</p>
+			<p class="text-justify"> Game engines are powerful tools in computer graphics. Their power comes at the immense cost of their development. In this work, we present a framework to train game-engine-like neural models, solely from monocular annotated videos. The result—a Learnable Game Engine (LGE)—maintains states of the scene, objects and agents in it, and enables rendering the environment from a controllable viewpoint. Similarly to a game engine, it models the logic of the game and the underlying rules of physics, to make it possible for a user to <em>play</em> the game by specifying both high- and low-level action sequences. Most captivatingly, our LGE unlocks the <em>director's mode</em>, where the game is played by <em>plotting behind the scenes</em>, specifying high-level actions and goals for the agents in the form of <em>language</em> and <em>desired states</em>. This requires learning “game AI”, encapsulated by our animation model, to navigate the scene using high-level constraints, play against an adversary, devise the strategy to win a point. The key to learning such game AI is the exploitation of a large and diverse text corpus, collected in this work, describing detailed actions in a game and used to train our animation model. To render the resulting state of the environment and its agents, we use a compositional NeRF representation used in our synthesis model. To foster future research, we present newly collected, annotated and calibrated large-scale Tennis and Minecraft datasets. Our method significantly outperforms existing neural video game simulators in terms of rendering quality. Besides, our LGEs unlock applications beyond capabilities of the current state of the art. Our framework, data, and models are publicly available.</p>
 
 			<h3 class="pt-4">Overview</h3>
 
-			<p>We propose Learnable Game Engines (LGEs), a framework to learn games from videos. Like a game engine, our learned model can synthesize scenes with explicit control on pose of articulated objects, their position, camera and style.</p>
+			<p class="text-justify">We propose Learnable Game Engines (LGEs), a framework to learn games from videos. Like a game engine, our learned model can synthesize scenes with explicit control on pose of articulated objects, their position, camera and style.</p>
 
 
 
@@ -95,7 +87,7 @@
 
 			<h3 class="pt-5">Playing with LGEs</h3>
 
-			<p class="pt-2">Similarly to a game engine, our model learns a representation of physics and of the game logic. A player can generate results by issuing actions. To unlock a high degree of expressiveness and enable fine-grained action control, we make use of text actions.</p>
+			<p class="pt-2 text-justify">Similarly to a game engine, our model learns a representation of physics and of the game logic. A player can generate results by issuing actions. To unlock a high degree of expressiveness and enable fine-grained action control, we make use of text actions.</p>
 
 			<!-- Grid row -->
 			<div class="row pt-3 nopadding">
@@ -120,8 +112,8 @@
 
 			<h3 class="pt-4">Director's mode with LGEs</h3>
 
-			<p class="">The knowledge about physics and the game logic enables our model to perform complex reasoning on the scene and enables the "director's mode" where high-level constraints or objectives can be specified and the model generates sequences containing complex action sequences that satisfy those constraints.</p>
-			<p class="">As a simple example, our model can be given an initial and final state and generate all the trajectory in the middle:</p>
+			<p class="text-justify">The knowledge about physics and the game logic enables our model to perform complex reasoning on the scene and enables the "director's mode" where high-level constraints or objectives can be specified and the model generates sequences containing complex action sequences that satisfy those constraints.</p>
+			<p class="text-justify">As a simple example, our model can be given an initial and final state and generate all the trajectory in the middle:</p>
 
 
 			<!-- Grid row -->
@@ -164,54 +156,37 @@
 			</div>
 			<!-- Grid row -->
 
-			<p class="pt-5">If a further conditioning action is given in the middle of the video, the model generates a completion satisfying also the additional constraint and changes the path of the player accordingly:</p>
+			<p class="pt-5 text-justify">If a further conditioning action is given in the middle of the video, the model generates a completion satisfying also the additional constraint and changes the path of the player accordingly:</p>
 
-			<!-- Grid row -->
-			<div class="row pt-5 nopadding">
 
-				<!-- Grid column -->
-				<div class="col-sm-12 col-md-12 col-xl-12 col-lg-12 p-0 text-center">
-					<video class="video-fluid w-100 flex" controls autoplay loop muted>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" interval="7000">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <video class="d-block video-fluid w-100 flex" controls autoplay loop muted>
 						<source src="video_sequences/overview/minecraft_video_completion_gold_pillar_with_path.mp4" type="video/mp4" />
 					</video>
-
-				</div>
-				<!-- Grid column -->
-
-			</div>
-			<!-- Grid row -->
-
-			<!-- Grid row -->
-			<div class="row pt-5 nopadding">
-
-				<!-- Grid column -->
-				<div class="col-sm-12 col-md-12 col-xl-12 col-lg-12 p-0 text-center">
-					<video class="video-fluid w-100 flex" controls autoplay loop muted>
+			    </div>
+			    <div class="carousel-item">
+			      <video class="video-fluid w-100 flex" controls autoplay loop muted>
 						<source src="video_sequences/overview/minecraft_video_completion_stairs_with_path.mp4" type="video/mp4" />
 					</video>
-
-				</div>
-				<!-- Grid column -->
-
-
-			</div>
-			<!-- Grid row -->
-			<!-- Grid row -->
-			<div class="row pt-5 nopadding">
-				
-				<!-- Grid column -->
-				<div class="col-sm-12 col-md-12 col-xl-12 col-lg-12 p-0 text-center">
-					<video class="video-fluid w-100 flex" controls autoplay loop muted>
+			    </div>
+			    <div class="carousel-item">
+			      <video class="video-fluid w-100 flex" controls autoplay loop muted>
 						<source src="video_sequences/overview/minecraft_video_completion_initial_blue_with_path.mp4" type="video/mp4" />
 					</video>
-
-				</div>
-				<!-- Grid column -->
-
+			    </div>
+			  </div>
+			  
 			</div>
-			<!-- Grid row -->
 
-			<p class="pt-5">More conditioning actions can be inserted at different times to generate multiple waypoints:</p>
+
+			<p class="pt-5 text-justify">More conditioning actions can be inserted at different times to generate multiple waypoints:</p>
 
 			<!-- Grid row -->
 			<div class="row pt-5 nopadding">
@@ -230,7 +205,7 @@
 			<!-- Grid row -->
 
 
-			<p class="pt-5">The model can be asked to perform complex reasoning such as which actions to take to win a point. To do so, the user can condition the top player with the action that he should "not catch the ball" at the end of the sequence:</p>
+			<p class="pt-5 text-justify">The model can be asked to perform complex reasoning such as which actions to take to win a point. To do so, the user can condition the top player with the action that he should "not catch the ball" at the end of the sequence:</p>
 
 			<!-- Grid row -->
 			<div class="row pt-3 nopadding">
@@ -287,7 +262,7 @@
 
 			<h3 class="pt-4">LGE Datasets</h3>
 
-			<p class="">To enable learning game engines, we build two dataset with camera calibration, 3D player poses, 3D ball localization and fine-grained text actions for each player and each frame:</p>
+			<p class="text-justify">To enable learning game engines, we build two dataset with camera calibration, 3D player poses, 3D ball localization and fine-grained text actions for each player and each frame:</p>
 
 			<!-- Grid row -->
 			<div class="row pt-3 nopadding">
